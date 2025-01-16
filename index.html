@@ -1,57 +1,61 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-  <body>
+<body>
     <!-- Logo & Navigation -->
     <header class="main-header">
-      <!-- Logo -->
-      <div class="logo-icon"></div>
+        <!-- Logo -->
+        <div class="logo-icon"></div>
 
-      <!-- Navigation -->
-      <nav>
-        <a href="#home-page" class="left-rounded">Home</a>
-        <a href="#our-profile">Our Profile</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#message-us" class="right-rounded">Message Us</a>
-      </nav>
+        <!-- Navigation -->
+        <nav>
+            <a href="#home-page" class="left-rounded">Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message-us" class="right-rounded">Message Us</a>
+        </nav>
     </header>
+
+    <hr />
 
     <!-- Main Content -->
     <main>
-      <!-- Home Page -->
-      <section>
-        <!-- Title -->
-        <header id="home-page">
-          <h1>
-            Hi <span id="user-greeting">User</span>, Welcome to our website
-          </h1>
-          <p>Lorem ipsum dolor sit amet adipiscing...</p>
-        </header>
+        <!-- Home Page -->
+        <section>
+            <!-- Title -->
+            <header id="home-page">
+                <h1>Hi <span id="user-greeting">User</span>, Welcome to our website</h1>
+                <p>Lorem ipsum dolor sit amet adipiscing...</p>
+            </header>
 
-        <div class="banner-image banner-image-1"></div>
-        <div class="banner-image banner-image-2"></div>
-        <div class="banner-image banner-image-3"></div>
-      </section>
+            <div class="banner-image banner-image-1"></div>
+            <div class="banner-image banner-image-2"></div>
+            <div class="banner-image banner-image-3"></div>
 
-      <!-- Our Profile -->
-      <section>
-        <!-- Title -->
-        <header id="our-profile">
-          <h1>Our Profile</h1>
+            </div>
+        </section>
 
-          <h2 class="who-wer"><strong> WHO </strong> WE ARE</h2>
-        </header>
+        <!-- Our Profile -->
+        <section>
+            <!-- Title -->
+            <header id="our-profile">
+                <h1>Our Profile</h1>
+                <h2 class="who-wer"><strong> WHO </strong> WE ARE</h2>
+            </header>
 
-        <div class="content">
-          <section class="info-profile">
+            <div class="content">
+              <section class="info-profile">
             <p>
               Selamat datang di <strong> PT. REvaI </strong> , mitra terpercaya
               Anda dalam pendidikan. Sejak berdiri [ada tahun 2012, kami telah
@@ -81,53 +85,100 @@
               tinggi
             </li>
           </section>
-        </div>
-      </section>
-
-      <!-- Portfolio -->
-      <section>
-        <!-- Title -->
-        <header id="portfolio">
-          <h1>Portfolio</h1>
-        </header>
-
-        <div class="content"></div>
-      </section>
-
-      <!-- Message Us -->
-      <section>
-        <!-- Title -->
-        <header id="message-us">
-          <h1>Message Us</h1>
-        </header>
-
-        <div class="content">
-          <form action="">
-            <div>
-              <label for="">Name</label>
-              <input
-                type="text"
-                id="name-input"
-                placeholder="Enter your name"
-                required
-              />
             </div>
+        </section>
 
-            <button type="button" id="submit-button">Submit</button>
-          </form>
+        <!-- Portfolio -->
+        <section>
+            <!-- Title -->
+            <header id="portfolio">
+                <h1>Portfolio</h1>
+            </header>
 
-          <div id="result-form"></div>
-        </div>
-      </section>
+            <div class="content">
+               <section id="headquarters">
+            <h2>Our Headquarters</h2>
+            <div class="locations">
+                <div class="location">
+                    <div class="circle">
+                        <img src="ifan-bima-B04Xpnu5JQ4-unsplash.jpg" alt="Surabaya"/>
+                    </div>
+                    <p>Surabaya</p>
+                </div>
+                <div class="location">
+                    <div class="circle">
+                        <img src="yulia-agnis-5eRzFzaygrU-unsplash.jpg" alt="Jakarta">
+                    </div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="location">
+                    <div class="circle">
+                        <img src="oliver-sjostrom-ITRnilDKqGs-unsplash.jpg" alt="Bali">
+                    </div>
+                    <p>Bali</p>
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+
+        <!-- Message Us -->
+        <section>
+            <!-- Title -->
+            <header id="message-us">
+                <h1>Message Us</h1>
+            </header>
+
+            <div class="content">
+                <form action="">
+                    <div>
+                        <label for="name-input">Name:</label>
+                        <input type="text" name="name" id="name-input" placeholder="Enter your name" required>
+                    </div>
+
+                    <button type="button" id="submit-btn">Submit</button>
+
+                    <div class="form-group">
+                    <label for="birth-date">Tanggal Lahir:</label>
+                    <input type="date" id="birth-date" name="birth-date" required>
+                    </div>
+
+                  <div class="form-group gender">
+                        <label>Jenis Kelamin:</label>
+                        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label>
+                  </div>
+                    
+                    <div class="form-group-pesan">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                  <div id="result-form"></div>
+                    <div class="message-output">
+                    <p><strong>Current time:</strong> <span id="current-time"></span></p>
+                    <p><strong>Nama:</strong> <span id="output-name"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="output-birth-date"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="output-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="output-message"></span></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <hr />
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 - All rights reserved</p>
+        <p>&copy; 2025 - All rights reserved</p>
     </footer>
 
-    <script src="js\script.js"></script>
-  </body>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
+
+
